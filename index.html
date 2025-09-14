@@ -28,7 +28,7 @@
             class="flex justify-center gap-2 bg-slate-100 rounded-lg px-5 py-2"
           >
             <img src="assets/checkbox.png" alt="" />
-            <h1 class="font-bold">25</h1>
+            <h1 id="point-number" class="font-bold">25</h1>
           </div>
           <div>
             <button class="bg-slate-100 px-2 py-2 rounded-full">
@@ -54,7 +54,7 @@
             </div>
             <div>
               <div class="stat-title">Task Assigned</div>
-              <div class="stat-value">05</div>
+              <div id="task-assigned" class="stat-value">6</div>
             </div>
           </div>
         </div>
@@ -82,14 +82,14 @@
         <div
           class="w-50 flex justify-center items-center bg-slate-100 rounded-lg"
         >
-          <div class="stat flex justify-end">
+          <div class="stat flex justify-center items-center">
             <div
               class="flex justify-center bg-slate-100 px-4 py-4 rounded-full"
             >
               <img src="assets/calender.png" alt="" />
             </div>
-            <div>
-              <p>Time and Date</p>
+            <div id="time-date" class="text-xl font-bold text-blue-600">
+              
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
             <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
               ShopEase
             </h1>
-            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p id="cart-1" class="text-3xl font-bold">Fix Mobile Button Issue</p>
             <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
               Debug Using Chrome Devtools
             </p>
@@ -120,7 +120,7 @@
               <h1>21 March, 2025</h1>
             </div>
             <div class="bg-blue-500 px-5 py-3 rounded-lg">
-              <button class="font-bold">Completed</button>
+              <button id="btn-1" class="font-bold">Completed</button>
             </div>
           </div>
         </div>
@@ -259,19 +259,24 @@
       <!-- Activity log start -->
        <div class="w-96 p-5 bg-slate-100 text-center items-center">
           <div class="space-y-5 text-center">
-            <div class="flex items-center text-center gap-5 px-28">
+            <div class="flex items-center text-center gap-5 px-24">
             <img src="assets/activity.png" alt="">
             <h1 class="whitespace-nowrap inline-block">Activity Log</h1>
           </div>
            <div class="bg-blue-500 px-5 py-3 rounded-lg inline-block text-center">
-              <button class="font-bold">Completed</button>
+              <button class="font-bold">Clear History</button>
             </div>
           </div>
            <div class="my-4 border-t border-gray-400"></div>
+           <div id="activity-log">
+                
+           </div>
        </div>
       
       <!-- Activity log end -->
       </div>
     </main>
+
+    <script src="js/utilities.js"></script>
   </body>
 </html>
