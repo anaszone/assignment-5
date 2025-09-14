@@ -1,11 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBoard</title>
-</head>
-<body>
-    
-</body>
+    <!-- Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-yellow-100 px-10 py-10 space-y-3">
+    <header>
+      <!-- navbar start -->
+      <div class="navbar bg-base-100 rounded-lg px-5 py-5">
+        <div class="flex-1">
+          <img src="assets/logo.png" alt="" />
+          <h1>
+            <span class="font-normal text-3xl">Dev</span
+            ><span class="text-black font-bold text-3xl">Board</span>
+          </h1>
+        </div>
+        <div class="flex-none gap-5">
+          <div
+            class="flex justify-center gap-2 bg-slate-100 rounded-lg px-5 py-2"
+          >
+            <img src="assets/checkbox.png" alt="" />
+            <h1 class="font-bold">25</h1>
+          </div>
+          <div>
+            <button class="bg-slate-100 px-2 py-2 rounded-full">
+              <img src="assets/theme-btn.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+    </header>
+
+    <main>
+      <!-- upper part start -->
+      <div class="stats shadow flex gap-5">
+        <div
+          class="w-50 flex justify-center items-center bg-slate-100 rounded-lg"
+        >
+          <div class="stat flex justify-start">
+            <div
+              class="flex justify-center bg-slate-100 px-4 py-4 rounded-full"
+            >
+              <img src="assets/checkbox.png" alt="" />
+            </div>
+            <div>
+              <div class="stat-title">Task Assigned</div>
+              <div class="stat-value">05</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 py-5">
+          <div class="flex justify-center items-center">
+            <button
+              class="rounded-lg w-full h-40 bg-gradient-to-r from-blue-500 to-green-500"
+            >
+              <div class="flex justify-center items-center">
+                <div>
+                  <img src="assets/board.png" alt="" />
+                </div>
+                <div>
+                  <p>
+                    Discover Something <br />
+                    New Today!
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-50 flex justify-center items-center bg-slate-100 rounded-lg"
+        >
+          <div class="stat flex justify-end">
+            <div
+              class="flex justify-center bg-slate-100 px-4 py-4 rounded-full"
+            >
+              <img src="assets/calender.png" alt="" />
+            </div>
+            <div>
+              <p>Time and Date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- upper part end -->
+
+      <div class="flex justify-center gap-1 py-10">
+        <!-- cart start -->
+      <div class="px-10 py-5 gap-10 grid grid-cols-3 items-end">
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card card-compact bg-base-100 w-96 shadow-xl px-10 py-5 gap-10"
+        >
+          <div class="space-y-5">
+            <h1 class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              ShopEase
+            </h1>
+            <p class="text-3xl font-bold">Fix Mobile Button Issue</p>
+            <p class="font-bold bg-slate-100 inline-block p-2 rounded-lg">
+              Debug Using Chrome Devtools
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div
+              class="flex flex-col items-center bg-slate-100 px-5 py-3 rounded-lg"
+            >
+              <p>Deadline</p>
+              <h1>21 March, 2025</h1>
+            </div>
+            <div class="bg-blue-500 px-5 py-3 rounded-lg">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart end -->
+
+      <!-- Activity log start -->
+       <div class="w-96 p-5 bg-slate-100 text-center items-center">
+          <div class="space-y-5 text-center">
+            <div class="flex items-center text-center gap-5 px-28">
+            <img src="assets/activity.png" alt="">
+            <h1 class="whitespace-nowrap inline-block">Activity Log</h1>
+          </div>
+           <div class="bg-blue-500 px-5 py-3 rounded-lg inline-block text-center">
+              <button class="font-bold">Completed</button>
+            </div>
+          </div>
+           <div class="my-4 border-t border-gray-400"></div>
+       </div>
+      
+      <!-- Activity log end -->
+      </div>
+    </main>
+  </body>
 </html>
